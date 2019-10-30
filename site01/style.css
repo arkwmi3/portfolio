@@ -15,7 +15,7 @@ html,main,body{
 }
 
 html,main{
-	background-image: url(checks.png);
+	background-image: url(./img/checks.png);
 	background-position: top center;
     background-repeat: repeat;
 }
