@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Bubbler+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<title>Portfolio</title>
+		<script
+		  src="https://code.jquery.com/jquery-1.12.4.min.js"
+		  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+		  crossorigin="anonymous">
+		</script>
+	</head>
+
+	<body class="index-b">
+		<header>
+			<div class="header-wrap-a">
+				<div class="logo">MAI MY PORTFOLIO</div>
+			</div>
+		</header>
+		<main>
+			
+			<div class="index-menu-outer">
+				<ul class="menu" style="text-align: right">
+					<li class="h-contents">HOME</li>
+					<li><a href="about.html" class="contents">ABOUT</a></li>
+					<li><a href="work.html" class="contents">WORK</a></li>
+					<li><a href="photo.html" class="contents">PHOTO</a></li>
+				</ul>
+			</div>
+		</main>
+		<footer class="index-f">
+			
+			<div>Designated by mai</div>
+		</footer>
+		<script type="text/javascript">
+			$(function(){
+				$(window).on('resize',resize);resize();
+			});
+			function resize(){
+				$('main').css('min-height',$(window).height() - $('header').height() - $('footer').height());
+			}
+		</script>
+	</body>
+
+</html>

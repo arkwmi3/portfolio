@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Bubbler+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<title>About</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="header-wrap">
+				<div class="logo">ABOUT</div>
+				<div class="menu-outer">
+					<ul class="menu" style="text-align: right">
+						<li><a href="index.html" class="contents">HOME</a></li>
+						<li class="h-contents">ABOUT</li>
+						<li><a href="work.html" class="contents">WORK</a></li>
+						<li><a href="photo.html" class="contents">PHOTO</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="content">
+					<div class="myname">荒川舞 Arakawa Mai</div>
+					<p>生年月日　/　1997年3月12日</p>
+					<p>E-mail   /　<a href="mailto:mai.arakawa@monpoco.tokyo">mai.arakawa@monpoco.tokyo</a></p>
+					<div class="about-img">
+						<img src="/img/kumachi2.png">
+					</div>
+				<div class="about-me">
+					<p>
+						1997年　滋賀県生まれ。<br>
+						高校を卒業後、パティシエになるために専門学校に進学。<br>2年間お菓子作りを学んだのち、上京してカフェレストランに就職。<br>
+						東京で生活をしていく中で好きな仕事をするだけでなく、もっとお金を稼ぎたいという思いが強くなり、同社を退職し、水商売の仕事を始める。
+ 						<br><br>
+						あるエンジニアと出会い、その仕事を知ってこんなことができるのだと驚いた。<br>IT業界やエンジニアという仕事に興味を持ち、自分で調べていくうちに、プログラミングを覚えて自分自身モノづくりをやっていきたい、まだまだ世の中でアナログな部分をITで解決していける仕事をしたいと考えるようになった。
+						<br><br>
+						正社員として働くために今年の4月に退店しプログラミングの勉強を始め、今に至る。
+					</p>
+				</div>
+				
+				<div style="clear: both"></div>
+				<div class="skill">
+					<ul>
+						<li class="table01">
+							<table>
+								<thead>
+									<tr>
+										<th>HTML</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="img"><img src="/img/logo-html.png"></td>
+									</tr>
+									<tr>
+										<td>期間 : 4ヶ月</td>
+									</tr>
+									<tr>
+										<td>自己評価 : ウェブサイトをひと通り制作するためのタグを使いこなすことができます。</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li class="table01">
+							<table>
+								<thead>
+									<tr>
+										<th>CSS</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="img"><img src="/img/logo-css.png"></td>
+									</tr>
+									<tr>
+										<td>期間 : 4ヶ月</td>
+									</tr>
+									<tr>
+										<td>自己評価 : ウェブサイトをひと通り制作するためのタグを使いこなすことができます。また、transitionなどの動きを付けることもできます。</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+					<ul>
+						<li class="table02">
+							<table>
+								<thead>
+									<tr>
+										<th>Photoshop</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="img"><img src="/img/logo-ps.png"></td>
+									</tr>
+									<tr>
+										<td>期間 : 1ヶ月</td>
+									</tr>
+									<tr>
+										<td>自己評価 : 基礎的な操作ができます。</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li class="table02">
+							<table>
+								<thead>
+									<tr>
+										<th>JavaScript</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="img"><img src="/img/logo-js.png"></td>
+									</tr>
+									<tr>
+										<td>期間 : 3ヶ月</td>
+									</tr>
+									<tr>
+										<td>自己評価 : HTMLに埋め込み、ウェブサイトに動きを出すことができます。</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li class="table02">
+							<table>
+								<thead>
+									<tr>
+										<th>PHP</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="img"><img src="/img/logo-php.png"></td>
+									</tr>
+									<tr>
+										<td>期間 : 2ヶ月</td>
+									</tr>
+									<tr>
+										<td>自己評価 : HTMLに埋め込み、ウェブサイトに動きを出すことができます。</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+		</main>
+		<footer>Designated by mai</footer>
+		<script type="text/javascript">
+			$(function(){
+				$(window).on('resize',resize);resize();
+			});
+			function resize(){
+				$('main').css('min-height',$(window).height() - $('header').height() - $('footer').height());
+			}
+		</script>
+	</body>
+</html>

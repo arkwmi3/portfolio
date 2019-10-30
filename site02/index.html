@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Patisserie Kaku</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="line"></div>
+			<div class="header-wrap">
+				<div class="logo"><img src="logo.png"></div>
+				<div class="inner">
+					<div class="tel">TEL / FAX : 03-0000-0000</div>
+					<div class="list">
+						<ul>
+							<li><a>HOME</a></li>
+							<li><a>Shop info</a></li>
+							<li><a>About</a></li>
+							<li><a>Menu</a></li>
+							<li><a>Contact</a></li>
+							<li><a>Recruit</a></li>
+							<li><a>Online Shop</a></li>
+							<li><a><i class="fas fa-search"></i></a></li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</header>
+		<main>
+			<div class="main-wrap">
+				<div class="icon">
+					<ul>
+						<li class="icon-01">
+							<i class="fab fa-twitter"></i>
+							<p>twitter</p>
+						</li>
+						<li class="icon-01">
+							<i class="fab fa-instagram"></i>
+							<p>instagram</p>
+						</li>
+						<li class="icon-01">
+							<i class="fab fa-facebook-square"></i>
+							<p>facebook</p>
+						</li>
+
+					</ul>
+					<li><img class="img01" src="halloween.png"></li>
+					<li><img class="img02" src="cake.png"></li>
+				</div>
+					<!-- Swiper START -->
+				<div class="swiper-container">
+					<!-- メイン表示部分 -->
+					<div class="swiper-wrapper">
+						<!-- 各スライド -->
+						<img src="cake01.png" class="swiper-slide">Slide 1
+						<img src="cake02.png" class="swiper-slide">Slide 3
+						<img src="cake03.png" class="swiper-slide">Slide 4
+						<img src="cake04.png" class="swiper-slide">Slide 5
+						<img src="cake05.png" class="swiper-slide">Slide 6
+					</div>
+				</div>
+				<!-- Swiper END -->
+			</div>
+		</main>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.swiper-container', {
+				effect: 'fade',
+				loop: true,
+				autoplay: {
+					delay: 4000,
+					stopOnLastSlide: false,
+					disableOnInteraction: false,
+					reverseDirection: false
+				},
+				
+			});
+		</script>
+	</body>
+</html>

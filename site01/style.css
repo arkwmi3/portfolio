@@ -1,0 +1,673 @@
+*{
+	list-style: none;
+}
+
+html,body{
+	width: 100%;
+	/*height: 100%; */
+}
+
+html,main,body{
+	color: #424242;
+	background-color: #fff;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align: center;
+}
+
+html,main{
+	background-image: url(checks.png);
+	background-position: top center;
+    background-repeat: repeat;
+}
+
+/*ヘッダー*/
+header{
+	z-index: 1;
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0px;
+}
+
+.header-box{
+	z-index: 2;
+	background-color: rgb(255, 255, 255, 0.5);
+	width: 100%;
+	height: auto;
+	padding-bottom: 12px;
+	padding-top: 4px;
+	text-align: -webkit-center;
+	border-bottom: 6px solid #FFF;
+}
+
+.inner{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.tel-fixed{
+	float: right;
+	color: #424242;
+	display: none;
+}
+
+.menu{
+	text-align: center;
+}
+
+.menu img{
+	width: 100px;
+	height: 50px;
+	margin-bottom: -7px;
+}
+
+.menu li{
+	display: inline-block;
+	font-size: 13px;
+	padding: 0px 70px;
+	border-right: 1px dotted;
+	text-align: center;
+	transition: opacity 0.3s;
+}
+
+.menu li:first-child{
+	border-left: 1px dotted;
+}
+
+.menu li:hover{
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.menu li a{
+	color: #424242;
+	text-decoration: none;
+	display: block;
+}
+
+/*メイン*/
+main{
+	position: relative;
+	text-align: center;
+}
+
+.main-box{
+	text-align: center;
+}
+
+.main-cat{
+	width: 100%;
+	height: 550px;
+}
+
+.logo{
+	font-family: 'Fredericka the Great', cursive;
+    font-size: 90px;
+    margin-bottom: -10px;
+}
+
+.logo-cat{
+	width: 80px;
+	height: 80px;
+}
+
+.fa-angle-double-down{
+	margin: 10px 0;
+	opacity: 0.6;
+}
+
+.info{
+	width: 90%;
+	margin: 0px auto;
+}
+
+.info li{
+	display: inline-block;
+}
+
+.info img{
+	width: 620px;
+	height: 150px;
+	margin-bottom: 70px;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+	transition: 0.5s;
+}
+
+.info img:hover{
+	transform: scale(1.1);
+    box-shadow: 5px 15px 12px rgba(0,0,0,0.4);
+}
+
+.info-cats1{
+	margin-right: 50px;
+}
+
+main .inner{
+	text-align: left;
+	width: 100%;
+	height: auto;
+}
+
+.menu-wrap {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.menu-ttl{
+    text-align: center;
+    width: 40%;
+    height: auto;
+    margin: 0 20px;
+    padding: 20px 30px;
+    display: inline-block;
+    color: #FFF;
+    background-color: #FEAB93;
+}
+
+.menu-ttl:last-child{
+	padding-left: 0px;
+}
+
+.menu-disc{
+	color: #999;
+    padding-top: 15px;
+}
+
+.important-points,.important-points2{
+	margin-bottom: 70px;
+}
+
+.important-points li,.important-points2 li{
+    background-color: #FEAB93;
+    color: #FFF;
+    display: inline-block;
+    width: 300px;
+    padding: 70px 14px;
+    margin: 0 5px;
+}
+
+.important-points div,.important-points2 div{
+	line-height: 20px;
+	margin-top: 20px;
+}
+
+.important-points img,.important-points2 img{
+	width: 128px;
+	height: 128px;
+}
+
+.important-points h2,.important-points2 h2{
+	margin-bottom: 10px;
+}
+
+.content{
+	padding: 0px 15%;
+	background-color: rgba(255, 255, 255,0.9);
+	width: 100%;
+	height: auto;
+	padding-bottom: 130px;
+	padding-top: 70px;
+}
+
+
+.content-a{
+	text-align: center;
+	border-bottom: 6px solid;
+    border-image: linear-gradient(to right, #FEAB93 0%, #FFEA7E 100%);
+    border-image-slice: 1;
+}
+
+.content-b{
+	margin-bottom: 150px;
+	background-color: #FFF;
+    border-radius: 0 0 30px 30px;
+}
+
+.content-b h2{
+	line-height: 40px;
+	text-align: center;
+}
+
+.content-b-img{
+	float: left;
+}
+
+.access-inner-l{
+	float: left;
+	margin-right: 80px;
+	margin-left: 30px;
+}
+
+.access-inner-r{
+	float: left;
+	margin-top: -3px;
+}
+
+.access-inner-l p{
+	line-height: 35px;
+}
+
+.access-inner-r-l{
+	width: 42%;
+	text-align: right;
+	line-height: 27px;
+	float: left;
+	padding-right: 5px;
+}
+
+.access-inner-r-l p{
+	font-weight: bold;
+}
+
+.access-inner-r-r{
+	width: 56%;
+	float: left;
+	text-align: left;
+	line-height: 27px;
+}
+
+.access-inner-r-r-2{
+	margin-top: -14px;
+}
+
+p,.content-b div,.content-b li,{
+	font-size: 14px;
+}
+
+h1{
+	font-size: 22px;
+}
+
+h2{
+	font-size: 18px;
+}
+
+iframe{
+	margin-top: 10px;
+}
+
+.space1{
+	padding-left: 5px;
+}
+
+.space2{
+	padding-left: 5px;
+}
+
+.border{
+	border-bottom: 1px dotted #BDBDBD;
+}
+
+.top-botton{
+	text-align: center;
+}
+
+.top-botton img{
+	width: 70px;
+	height: 70px;
+	margin-bottom: 50px;
+    margin-top: 150px;
+	transition: opacity 0.5s;
+}
+
+.top-botton img:hover{
+	opacity: 0.8;
+}
+
+form{
+	padding: 30px 50px;
+}
+
+form dl dt{
+	width: 30%;
+}
+
+form dl dd{
+	width: 70%;
+}
+
+form dl dt,form dl dd{
+	text-align: left;
+	padding: 10px 0;
+	float: left;
+}
+
+form dl .name,form dl .tell{
+	width: 240px;
+	height: 30px;
+}
+
+form dl .email,form dl .type{
+	width: 300px;
+	height: 30px;
+}
+
+form dl .message{
+	width: 600px;
+	height: 100px;
+}
+
+form dl .name,
+form dl .email,
+form dl .tell,
+form dl .type,
+form dl .message{
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+form dl dd .contact{
+	margin-right: 100px;
+}
+
+
+btn-area{
+	clear: both;
+}
+
+
+.contact{
+  display: none;
+}
+.contact + label{
+  padding-left: 20px;
+  position:relative;
+}
+.contact + label::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+
+.contact:checked + label::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background: #FEAB93;
+  border-radius: 50%;
+}
+
+button{
+	background-color: #FEAB93;
+	color: #FFF;
+	padding: 10px 50px;
+	margin-top: 70px;
+	border-radius: 10px;
+}
+
+.required:after{
+	content: "(必須)";
+	color: #FEAB93;
+	font-size: 13px;
+}
+
+/*catsメイン*/
+.cats-name li{
+	display: inline-block;
+	margin-right: 64px;
+	text-align: center;
+	margin-top: 70px;
+}
+
+.cats-name li:last-child{
+	margin-right: 0px;	
+}
+
+.cats-name img{
+	width: 200px;
+	height: 200px;
+	transition: 0.5s;
+}
+
+.cats-name img:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+
+.cats-name div{
+	font-size: 14px;
+}
+
+.fa-birthday-cake{
+	color: #FEAB93;
+}
+
+
+
+
+/*フッター*/
+footer div{
+	font-size: 16px;
+	height: 70px;
+	line-height: 70px;
+	color: #FFF;
+	background-color: #FFC0AC;
+}
+
+
+
+/*レスポンシブ*/
+@media screen and (max-width: 600px){
+/*画面サイズが600px以下の場合に適用*/
+	/*ヘッダー*/
+	body{
+		overflow-x: hidden;
+	}
+
+	.header-box{
+		padding-bottom: 0px;
+	}
+
+	.menu-outer{
+		width: 100%;
+		overflow-x: auto;
+		padding: 10px 0;
+		-webkit-overflow-scrolling : touch;
+	}
+
+	.menu {
+    	margin-top: 0px;
+    	width: 600px;
+	}
+		
+	.tel-fixed{
+	  position : fixed;
+	  right : 15px;
+	  bottom : 80px;
+	  color: #424242;
+	  display: block;
+	}
+
+	.menu li{
+		padding: 0 1px;
+		font-size: 2vw;
+		width: 100px;
+		display: block;
+		float: left;
+	}
+
+	/*メイン*/
+	.main-cat {
+	    width: 170%;
+	    height: 240px;
+	}
+
+	.inner {
+    	width: 100%;
+	}
+
+	.menu img {
+	    width: 50px;
+	    height: 25px;
+	    margin-bottom: 0px;
+	}
+
+	.title {
+    	float: none;
+    	font-size: 3vw;
+	}
+
+	.logo {
+	    font-size: 9vw;
+	}
+
+	.logo-cat {
+	    width: 30px;
+	    height: 30px;
+	}
+
+	.fa-angle-double-down {
+    	margin-top: 5px;
+	}
+
+	.info {
+    	width: 80%;
+	}
+
+	.info li{
+		display: block;
+	}
+
+	.info img {
+		width: 300px;
+	    height: 70px;
+	    margin-bottom: 1px;
+	}
+
+	.content {
+    	padding: 0px 5%;
+    	padding-bottom: 40px;
+    	padding-top: 50px;
+    	margin-top: 20px;
+	}
+	
+	.info-cats1{
+		margin-bottom: 20px;
+	}
+
+	.content-b{
+		font-size: 3vw;
+	}
+
+	.menu-wrap {
+    	padding: 30px 5px;
+	}
+
+	.menu-ttl {
+	    width: 90%;
+	    padding: 10px 0px;
+	    margin-bottom: 5px;
+	    display: block;
+	}
+
+	.important-points li, .important-points2 li {
+    	width: 100%;
+    	padding: 0px;
+    	margin: 0px;
+    	margin-bottom: 5px;
+    	display: block;
+	}
+
+	.important-points div, .important-points2 div {
+	    line-height: 20px;
+	    margin-top: -5px;
+	    padding-bottom: 20px;
+	}
+
+	.access-inner-l{
+    	float: none;
+    	margin-right: 30px;
+	}
+
+	.access-inner-l p {
+    	line-height: 20px;
+	}
+
+	iframe{
+		width: 270px;
+		height: 200px;
+		
+	}
+
+	h1{
+		font-size: 5vw;
+	}
+
+	h2{
+		font-size: 4vw;
+	}
+
+	.access-inner-r {
+    	float: none;
+    	margin-top: 0px;
+	}
+
+	.access-inner-r-l{
+	    line-height: 20px;
+	}
+
+	.access-inner-r-r{
+		line-height: 20px;
+	}
+
+	.access-inner-r-r-2{
+		margin-top: 0px;
+	}
+
+	form {
+	    padding: 30px 10px;
+	}
+
+	form dl dt {
+	    padding: 0;
+	    float: none;
+	    width: 100%;
+	}
+
+	form dl dd {
+    	padding: 0;
+    	float: none;
+    	margin-bottom: 15px;
+    	width: 100%;
+	}
+
+	form dl .name, form dl .tell {
+	    width: 80%;
+	}
+
+	form dl .email, form dl .type {
+    	width: 100%;
+	}
+
+	form dl .message {
+	    width: 100%;
+	    height: 70px;
+	}
+
+	form dl dd .contact {
+    	margin-right: 0px;
+	}				
+
+	/*catsメイン*/
+	.cats-name img {
+	    width: 125px;
+	    height: 125px;
+	}
+
+	.cats-name li {
+    margin-right: 0px;
+    text-align: center;
+    width: 49%;
+}
+
+

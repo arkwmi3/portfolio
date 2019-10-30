@@ -1,0 +1,154 @@
+*{
+	list-style: none;
+}
+
+html,body{
+	width: 100%;
+	height: 100%; 
+}
+
+body{
+	color: #26130C;
+}
+
+header{
+	width: 100%;
+	background-color: rgba(255,255,255,0.5);
+	position: sticky;
+ 	top: 0;
+ 	text-align: center;
+}
+
+
+.catch-copy{
+	border-bottom: 2px solid;
+}
+
+.catch-copy,.logo-navi{
+	font-size: 15px;
+}
+
+/*トグルボタンのスタイルを指定*/
+.Toggle {
+    display: block;
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    left: 40px;
+    top: -75px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+}
+
+.toggle-menue{
+	position: absolute;
+	top: 30px;
+	left: -2px;
+}
+ 
+.Toggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #000;
+    -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+    -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+    transition: .35s ease-in-out;			/*変化の速度を指定*/
+    left: 6px;
+}
+ 
+.Toggle span:nth-child(1) {
+    top: 9px;
+}
+ 
+.Toggle span:nth-child(2) {
+    top: 18px;
+}
+ 
+.Toggle span:nth-child(3) {
+    top: 27px;
+}
+ 
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+ 
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.logo{
+	width: 300px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: -15px;
+}
+
+.logo-navi{
+	margin: -65px 15px -20px;
+}
+
+.member-link{
+	text-align: left;
+	margin-right: 40px;
+	margin-top: -50px;
+	margin-bottom: 70px;
+}
+
+.member-link p{
+	float: right;
+	border: 1px solid;
+	font-size: 15px;
+	padding: 10px 40px;
+	margin-left: 15px;
+	transition: opacity 0.4s;
+}
+
+.member-link p:hover{
+	cursor: pointer;
+	opacity: 0.4;
+}
+
+main{
+	text-align: center;
+}
+
+.menue{
+	width: 100%;
+	background-color:#E8E4E3;
+	margin-top: 30px;
+}
+
+.menue li{
+	display: inline;
+	font-size: 15px;
+	line-height: 50px;
+	padding: 0 50px ;
+	border-right: 1px solid;
+	opacity: 0.6;
+	transition: opacity 0.4s;
+}
+
+.menue li:last-child{
+	border-right: none;
+}
+
+.menue li:hover{
+	cursor: pointer;
+	opacity: 0.3;
+}
+
+.dress-img{
+	margin-top: 10px;
+}

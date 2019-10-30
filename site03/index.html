@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		<title>ファーストビュー「Dress Kaku」</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1 class="catch-copy">花嫁に最高のひとときを…♡</h1>
+			<img src="logo.png" class="logo">
+			<div class="member-link">
+				<p>お問い合わせ <i class="fas fa-caret-right"></i></p>
+				<p>ご予約 <i class="fas fa-caret-right"></i></p>
+			</div>
+			<!-- ハンバーガーメニュー部分 --> 
+			<div class="Toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<p class="toggle-menue">menu</p>
+			</div>
+			<p class="logo-navi">ウェディングドレスショップ</p>
+		</header>
+		<main>
+			<div class="menue">
+				<ul>
+					<li><a><i class="fas fa-home"></i> HOME</a></li>
+					<li><a><i class="fas fa-heart"></i> 新作</a></li>
+					<li><a><i class="fas fa-crown"></i> ランキング</a></li>
+					<li><a><i class="fas fa-bookmark"></i> ブランド一覧</a></li>
+					<li><a><i class="fas fa-search"></i> 商品検索</a></li>
+				</ul>
+			</div>
+			<img src="dress1.jpg" class="dress-img">
+		</main>
+		<footer>
+			
+		</footer>
+		<script type="text/javascript">
+			$(function() {
+			　$('.Toggle').click(function() {
+			　　$(this).toggleClass('active');
+
+			　if ($(this).hasClass('active')) {
+			　　$('.NavMenu').addClass('active');　 //クラスを付与
+			　} else {
+			　　$('.NavMenu').removeClass('active'); //クラスを外す
+			　}
+			　});
+			});
+		</script>
+	</body>
+	
+</html>

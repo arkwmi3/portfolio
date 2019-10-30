@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/site01/style2.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			  $('a[href^="#"]').click(function(){
+			    var speed = 500;
+			    var href= $(this).attr("href");
+			    var target = $(href == "#" || href == "" ? 'html' : href);
+			    var position = target.offset().top;
+			    $("html, body").animate({scrollTop:position-200}, speed, "swing");
+			    return false;
+			  });
+			});
+		</script>
+		<title>架空サイト 「猫カフェ かくぅ」</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+	</head>
+
+	<body id="content6">
+		<header>
+			<div class="header-box">
+				<div class="inner">
+					<div class="logo">CAT CAFE <img src="logo-cat.png" class="logo-cat"> KAKÛ</div>
+					<div class="menu-outer">
+						<ul class="menu">
+							<li><a href="/site01/#content6">ホーム<br>Home</a></li>
+							<li><a href="/site01/#content1">お店について<br>About</a></li>
+							<li><a href="/site01/#content2">メニュー表<br>Menu</a></li>
+							<li><a href="/site01/#content3">お願い<br>Important points</a></li>
+							<li><a href="/site01/#content4">アクセス<br>Access</a></li>
+							<li><a href="/site01/#content5">お問い合わせ<br>Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="main-box">
+				<img src="transfer-cat.png" class="main-cat">
+				<div><i class="fas fa-angle-double-down fa-2x"></i></div>
+				<div class="inner">
+					<div class="content">
+						<h1 class="content-a">譲渡について　About transfer</h1>
+						<div class="content-b">
+							<div class="item">この子を家族に迎えたい！！という猫ちゃんがいましたら、お近くのスタッフまでお声がけください。<br>				スタッフより、猫の性格や年齢・譲渡条件などをお話しさせていただきます。
+							</div>
+							<i class="fas fa-angle-down"></i>
+							<div class="item">アンケートにご記入いただき、条件があいましたら、お届け日時等の打ち合わせをさせていただきます。
+							</div>
+							<ul>
+								<li>・その場で猫をお持ち帰りになることはできません。後日ご自宅までスタッフがお届けに上がります。</li>
+								<li>・お届けまでに、ごはんやトイレをご用意ください。</li>
+							</ul>
+							<i class="fas fa-angle-down"></i>
+							<div class="item">お届け日から1～2週間程度のトライアル（お試し飼い）が始まります。<br>
+							先住猫ちゃんやワンちゃんがいる場合は、相性などをみていただく期間となります。
+							</div>
+							<i class="fas fa-angle-down"></i>
+							<div class="item">トライアル期間終了後に、再度お会いさせていただき、本譲渡となります。
+							<ul>
+								<li>
+									・本譲渡の際、お約束事項を記載した書面にサインをいただき、医療費の一部負担金として、一頭につき35,000円をいただきます。
+								</li>
+								<li>（一部負担金の内訳：不妊去勢手術・ワクチン接種・マイクロチップ・	ウイルス検査・寄生虫駆除・その他医療処置費用）
+								</li>
+							</ul>
+							</div>
+
+							<div class="item">ご不明な点は、スタッフまでお気軽にお尋ねください。</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="top-botton"><a href="#content6"><img src="top-botton.png"></a></div>
+				<a href="tel:032222222" class="tel-fixed">
+						  <i class="fas fa-phone fa-2x"></i>
+					</a>
+			</div>
+		</main>
+		<footer>
+			<div>&copy 2019 Cat cafe Kakû</div>
+		</footer>
+	</body>
+
+</html>
