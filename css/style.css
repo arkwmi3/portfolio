@@ -5,17 +5,21 @@
 html,body{
 	width: 100%;
 	height: 100%; 
+	background-color: #fff;
 }
+
 body{
 	color: #5B5556;
-	background-color: #fff;
+	
 	font-family:"M PLUS 1p","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	position: relative;
 }
 
+
 .index-b{
 	background-image: url(/img/IMG_kusatsu.JPG);
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 a{
@@ -23,23 +27,17 @@ a{
 }
 
 /*ヘッダー*/
-.header-wrap,
-.header-wrap-a{
+.header-wrap{
 	width: 100%;
-	height: 100px;
+	height: 450px;
 	padding-top: 15px;
-
 }
 
-.logo{
-	float: left;
-	font-size: 70px;
-	margin-left: 30px;
+.header-wrap span{
+	color: pink;
 }
 
-.header-wrap li,
-.header-wrap-a li,
-.index-menu-outer li{
+.header-wrap li,{
 	display: inline-block;
 	list-style: none;
 	font-size: 45px;
@@ -47,9 +45,17 @@ a{
 	margin-top: 14px;
 }
 
-.header-wrap-a .logo,
-.header-wrap-a .contents,
-.header-wrap-a .h-contents{
+.logo,.title-logo{
+	font-size: 70px;
+}
+
+.logo{
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.title-logo{
+	text-align: center;
 	color: #FFF;
 	font-family: 'Bubbler One', sans-serif;
 }
@@ -69,7 +75,7 @@ a{
 	color: rgb(247, 203, 0.2);
 }
 
-.h-contents,.f-photo-contents,.header-wrap-a .h-contents{
+.h-contents,.f-photo-contents{
 	color: rgb(247, 203, 0.2);
 	cursor: default;
 }
@@ -80,6 +86,81 @@ a{
 /*メイン*/
 main{
 	position: relative;
+}
+
+/*ウェーブ*/
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+.content{
+	position: relative;
+}
+
+svg {
+  height: 20vh;
+  width: 100vw;
+  position: absolute;
+  top: -115px;
+  left: 0;
+}
+
+.space{
+	width: 100%;
+	height: 350px;
+	background-color: #fff;
+}
+
+.scroll{
+	padding-top: 290px;
+	position: relative;
+}
+
+.scroll p{
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Bubbler One', sans-serif;
+}
+
+.scroll span {
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -12px;
+  border-left: 1px solid #5B5556;
+  border-bottom: 1px solid #5B5556;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
 
 .index-menu-outer{
@@ -94,6 +175,11 @@ main{
 /*about-メイン*/
 .myname{
 	font-size: 40px;
+	margin-top: 100px;
+}
+
+.profile{
+	text-align: center;
 }
 
 p{
@@ -162,7 +248,8 @@ table img{
 ul .table01{
 	width: 50%;
 	float: left;
-	margin-bottom: 100px;
+	padding: 0 30px;
+	margin-bottom: 70px;
 }
 
 ul .table02{
@@ -188,8 +275,8 @@ ul .table02{
 	width: 90%;
 	max-width: 900px;
 	margin: 0 auto;
-	margin-top: 80px;
-	margin-bottom: 100px;
+	margin-top: 10px;
+	margin-bottom: 200px;
 }
 
 .img-box{
@@ -203,6 +290,10 @@ ul .table02{
 .img-box:hover{
 	opacity: 0.8;
 	box-shadow: 1px 8px 12px rgba(0,0,0,0.4);
+}
+
+.table03{
+	margin-bottom: 100px;
 }
 
 .table03 th{
@@ -274,38 +365,62 @@ ul .table02{
 	margin-right: 5px;
 }
 
-/*フッター*/
-.index-f{
-	height: 40px;
-	width: 100%;
-	font-size: 15px;
-	line-height: 40px;
+.scroll_button{
 	text-align: center;
-	background-color: #FFF;
+	margin-bottom: 50px;
 }
 
+.scroll_button img{
+	width: 80px;
+	height: 60px;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+}
+
+.scroll_button img:hover{
+	transform: rotate(720deg);
+	-webkit-transform: rotate(720deg);
+}
+
+/*フッター*/
 footer{
 	width: 100%;
 	height: 40px;
 	font-size: 15px;
 	line-height: 40px;
 	text-align: center;
+
 }
 
 
 /*レスポンシブ*/
 @media screen and (max-width: 600px){
 /*画面サイズが600px以下の場合に適用*/
+	.index-b{
+		background-attachment: scroll;
+	}
+
 	.logo{
-		font-size: 15vw;
     	line-height: 50px;
     	margin-left: 20px;
     	margin-top: 20px;
 	}
 
-	.header-wrap, .header-wrap-a {
+	.title-logo{
+		line-height: 0px;
+	    padding-top: 40px;
+	    text-align: center;
+	    float: none;
+	    margin-left: 0px;
+		}
+
+	.logo, .title-logo {
+  	  font-size: 14vw;
+	}
+
+	.header-wrap{
 	    padding-top: 0px;
-	    height: 100px;
+	    height: 330px;
 	}
 
 	.header-wrap li{
@@ -331,11 +446,19 @@ footer{
 		color: rgba(58, 52, 53,0.7);
 	}
 
-	.header-wrap li:last-cihld,.header-wrap-a li:last-cihld{
+	.header-wrap li:last-cihld{
 		padding-right: 0;
 	}
 
 	/*メイン*/
+	.scroll{
+		padding-top: 180px;
+	}
+
+	.scroll span {
+		top: 130px;
+	}
+
 	.h1{
 		font-size: 9vw;
 	}
@@ -433,7 +556,9 @@ footer{
 	ul .table01,ul .table02{
 		width: 100%;
 		float: none;
+		padding: 0 20px;
 		margin-bottom: 80px;
+
 	}
 
 	/*workメイン*/
@@ -453,7 +578,10 @@ footer{
     	padding: 5px 15px;
 	}
 
-
+	.scroll_button img{
+		width: 60px;
+		height: 50px;
+	}
 	/*フッター*/
 
 }

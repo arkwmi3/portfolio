@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Bubbler+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<title>About</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="header-wrap">
+				<div class="logo">CONTACT</div>
+				<div class="menu-outer">
+					<ul class="menu" style="text-align: right">
+						<li><a href="index.html" class="contents">HOME</a></li>
+						<li><a href="about.html" class="contents">ABOUT</a></li>
+						<li><a href="work.html" class="contents">WORK</a></li>
+						<li><a href="photo.html" class="contents">PHOTO</a></li>
+						<li class="h-contents">CONTACT</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+		<div class="content">
+			<div class="content-b">
+				<div class="menu-wrap">
+					<form>
+						<dl>
+							<dt>貴社名</dt>
+								<dd><input type="text" name="name" class="name"></dd>
+							<dt><span class="required">お名前</span></dt>
+								<dd><input type="text" name="name" class="name" required></dd>
+							<dt><span class="required">メールアドレス</span></dt>
+								<dd><input type="email" name="email" class="email" required></dd>
+							<dt>お電話番号</dt>
+								<dd><input type="tel" name="tel" class="tell"></dd>
+							<dt><span class="required">お問い合わせ内容</span></dt>
+								<dd><textarea name="message" class="message"></textarea></dd>
+							<dt></dt>
+								<dd class="btn-area">
+									<button type="submit" class="btn">送信する</button>
+								</dd>
+						</dl>
+					</form>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+		</div>
+		<footer>Designated by mai</footer>
+		<script type="text/javascript">
+			$(function(){
+				$(window).on('resize',resize);resize();
+			});
+			function resize(){
+				$('main').css('min-height',$(window).height() - $('header').height() - $('footer').height());
+			}
+		</script>
+	</body>
+</html>

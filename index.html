@@ -12,37 +12,316 @@
 		  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 		  crossorigin="anonymous">
 		</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 	</head>
 
 	<body class="index-b">
-		<header>
-			<div class="header-wrap-a">
-				<div class="logo">MAI MY PORTFOLIO</div>
+		<header id="demo_scroll_top">
+			<div class="header-wrap">
+				<div class="title-logo"><span>MAI</span> MY PORTFOLIO</div>
 			</div>
 		</header>
 		<main>
-			
-			<div class="index-menu-outer">
-				<ul class="menu" style="text-align: right">
-					<li class="h-contents">HOME</li>
-					<li><a href="about.html" class="contents">ABOUT</a></li>
-					<li><a href="work.html" class="contents">WORK</a></li>
-					<li><a href="photo.html" class="contents">PHOTO</a></li>
-				</ul>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><path id="wave" d=""/></svg>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+			<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+			<div class="space">
+				<div class="scroll">
+					<span></span><p>Scroll</p>
+				</div>
+			</div>
+			<div class="logo">ABOUT</div>
+			<div class="content">
+				<div class="profile">
+					<div class="myname">荒川舞 Arakawa Mai</div>
+					<div>生年月日　/　1997年3月12日</div>
+					<div>E-mail   /　<a href="mailto:mai.arakawa@monpoco.tokyo">mai.arakawa@monpoco.tokyo</a></div>
+				</div>
+					<div class="about-img">
+						<img src="/img/kumachi2.png">
+					</div>
+				<div class="about-me">
+					<p>
+						1997年　滋賀県生まれ。<br>
+						高校を卒業後、パティシエになるために専門学校に進学。<br>2年間お菓子作りを学んだのち、上京してカフェレストランに就職。<br>
+						東京で生活をしていく中で好きな仕事をするだけでなく、もっとお金を稼ぎたいという思いが強くなり、同社を退職し、水商売の仕事を始める。
+ 						<br><br>
+						あるエンジニアと出会い、その仕事を知ってこんなことができるのだと驚いた。<br>IT業界やエンジニアという仕事に興味を持ち、自分で調べていくうちに、プログラミングを覚えて自分自身モノづくりをやっていきたい、まだまだ世の中でアナログな部分をITで解決していける仕事をしたいと考えるようになった。
+						<br><br>
+						正社員として働くために今年の4月に退店しプログラミングの勉強を始め、今に至る。
+					</p>
+				</div>
+				
+				<div style="clear: both"></div>
+				<div class="skill">
+					<ul>
+						<li class="table01">
+							<table>
+								<thead>
+									<tr>
+										<th>HTML</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="img"><img src="/img/logo-html.png"></td>
+									</tr>
+									<tr>
+										<td>期間 : 4ヶ月</td>
+									</tr>
+									<tr>
+										<td>自己評価 : ウェブサイトをひと通り制作するためのタグを使いこなすことができます。</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li class="table01">
+							<table>
+								<thead>
+									<tr>
+										<th>CSS</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="img"><img src="/img/logo-css.png"></td>
+									</tr>
+									<tr>
+										<td>期間 : 4ヶ月</td>
+									</tr>
+									<tr>
+										<td>自己評価 : ウェブサイトをひと通り制作するためのタグを使いこなすことができます。また、transitionなどの動きを付けることもできます。</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+					<ul>
+						<li class="table02">
+							<table>
+								<thead>
+									<tr>
+										<th>Photoshop</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="img"><img src="/img/logo-ps.png"></td>
+									</tr>
+									<tr>
+										<td>期間 : 1ヶ月</td>
+									</tr>
+									<tr>
+										<td>自己評価 : 基礎的な操作ができます。</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li class="table02">
+							<table>
+								<thead>
+									<tr>
+										<th>JavaScript</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="img"><img src="/img/logo-js.png"></td>
+									</tr>
+									<tr>
+										<td>期間 : 3ヶ月</td>
+									</tr>
+									<tr>
+										<td>自己評価 : HTMLに埋め込み、ウェブサイトに動きを出すことができます。</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li class="table02">
+							<table>
+								<thead>
+									<tr>
+										<th>PHP</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="img"><img src="/img/logo-php.png"></td>
+									</tr>
+									<tr>
+										<td>期間 : 2ヶ月</td>
+									</tr>
+									<tr>
+										<td>自己評価 : HTMLに埋め込み、ウェブサイトに動きを出すことができます。</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			<div class="logo">WORK</div>
+				<div class="content">
+					<ul>
+						<li>
+							<div><a href="/site01/"><img src="/img/screen-cat.png" class="img-box"></a></div>
+							<p>
+								<table class="table03">
+									<thead>
+										<tr>
+											<th>作品</th>
+											<td>架空サイト「猫カフェ かくぅ」</td>
+										</tr>
+										<tr>
+											<th>製作期間</th>
+											<td>2週間</td>
+										</tr>
+										<tr>
+											<th>ツール</th>
+											<td>Planning / Design / HTML,CSS / Javascript / photoshop / レスポンシブ</td>
+										</tr>
+										<tr>
+											<th>コメント</th>
+											<td>架空サイトを制作するうえで、自分の好きなもののサイトを作ろうと思い、猫カフェを採用しました。<br>猫ちゃんたちの活発さが出るようにポップなデザインと、動きを出しました。</td>
+										</tr>
+									</thead>
+								</table>
+							</p>
+						</li>
+						<li>
+							<div><a href="/site02/"><img src="/img/screen-patisserie.png" class="img-box"></a></div>
+							<p>
+								<table class="table03">
+									<thead>
+										<tr>
+											<th>作品</th>
+											<td>ファーストビュー「Patisserie Kaku」</td>
+										</tr>
+										<tr>
+											<th>製作期間</th>
+											<td>4時間</td>
+										</tr>
+										<tr>
+											<th>ツール</th>
+											<td>Planning / Design / HTML,CSS / Javascript / photoshop</td>
+										</tr>
+										<tr>
+											<th>コメント</th>
+											<td>ボルドーカラーでまとめ、文字サイズを小さめにし、シンプルにすることで上品で温かい雰囲気にしました。</td>
+										</tr>
+									</thead>
+								</table>
+							</p>
+						</li>
+						<li>
+							<div><a href="/site03/"><img src="/img/screen-dress.png" class="img-box"></a></div>
+							<p>
+								<table class="table03">
+									<thead>
+										<tr>
+											<th>作品</th>
+											<td>ファーストビュー「Dress Kaku」</td>
+										</tr>
+										<tr>
+											<th>製作期間</th>
+											<td>3時間</td>
+										</tr>
+										<tr>
+											<th>ツール</th>
+											<td>Planning / Design / HTML,CSS / Javascript / photoshop</td>
+										</tr>
+										<tr>
+											<th>コメント</th>
+											<td>女性が夢見る白いドレスを邪魔しない色でまとめ、きれいな唇が目立つように考えました。</td>
+										</tr>
+									</thead>
+								</table>
+							</p>
+						</li>
+						<li>
+							<div><a href="/site04/"><img src="/img/screen-sango.png" class="img-box"></a></div>
+							<p>
+								<table class="table03">
+									<thead>
+										<tr>
+											<th>作品</th>
+											<td>模写サイト「SANGO」</td>
+										</tr>
+										<tr>
+											<th>製作期間</th>
+											<td>1週間</td>
+										</tr>
+										<tr>
+											<th>ツール</th>
+											<td>HTML,CSS / photoshop</td>
+										</tr>
+										<tr>
+											<th>コメント</th>
+											<td>見本サイトに近づけるために何度も修復をし、画像もphotoshopで作りました。</td>
+										</tr>
+									</thead>
+								</table>
+							</p>
+						</li>
+					</ul>
+				</div>
+			<div class="logo">PHOTO</div>
+			<div class="content">
+				<div class="type">My Favorite</div>
+				<div class="photo">
+					<div class="menu-outer">
+						<ul class="menu2">
+							<li class="f-photo-contents">CAT</li>
+							<li><a href="bear.html" class="photo-contents">BEAR</a></li>
+							<li><a href="flower.html" class="photo-contents">FLOWER</a></li>
+							<li><a href="sweets.html" class="photo-contents">SWEETS</a></li>
+							<li><a href="food.html" class="photo-contents">FOOD</a></li>
+							<li><a href="nail.html" class="photo-contents">NAIL</a></li>
+							<li><a href="vegetables.html" class="photo-contents">KITCHEN GARDEN</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="myfavorite">
+					<img src="/img/IMG_cat01.jpg" class="photo1">
+					<div class="photo-wrap">
+						<img src="/img/IMG_cat02.jpg" class="Photo2">
+						<img src="/img/IMG_cat03.jpg" class="Photo2">
+						<img src="/img/IMG_cat04.jpg" class="Photo2">
+						<img src="/img/IMG_cat05.jpg" class="Photo2">
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="scroll_button">
+    		<a href="#demo_scroll_top"><img src="./img/top-botton.png"></a>
 			</div>
 		</main>
-		<footer class="index-f">
-			
+		<footer>
 			<div>Designated by mai</div>
 		</footer>
 		<script type="text/javascript">
-			$(function(){
-				$(window).on('resize',resize);resize();
+				$('#wave').wavify({
+			  height: 60,
+			  bones: 3,
+			  amplitude: 40,
+			  color: '#FFF',
+			  speed: .25
 			});
-			function resize(){
-				$('main').css('min-height',$(window).height() - $('header').height() - $('footer').height());
-			}
+		</script>
+		<script type="text/javascript">
+			$(function(){
+		    $("a#demo_scroll_top[href^=#]").click(function(){
+		        var speed = 500;
+		        var href = $(this).attr("href");
+		        var target = $(href == "#" || href == ""?"html" : href);
+		        var position = target.offset().top;
+
+		        $("body, html").animate({scrollTop:position}, speed, "swing");
+		        return false;
+		    });
+			});
 		</script>
 	</body>
-
 </html>
