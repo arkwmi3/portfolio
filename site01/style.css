@@ -36,7 +36,6 @@ header{
 	padding-bottom: 12px;
 	padding-top: 4px;
 	text-align: -webkit-center;
-	border-bottom: 6px solid #FFF;
 }
 
 .inner{
@@ -211,9 +210,12 @@ main .inner{
 
 .content-a{
 	text-align: center;
-	border-bottom: 6px solid;
+	border-bottom: 6px solid #FEAB93;
     border-image: linear-gradient(to right, #FEAB93 0%, #FFEA7E 100%);
     border-image-slice: 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .content-b{
